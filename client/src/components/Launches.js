@@ -9,12 +9,13 @@ const LAUNCHES_QUERY = gql`
         launches {
             mission_name,
             launch_year,
+            flight_number
             launch_success,
             launch_date_local,
             rocket {
               rocket_name
                 }
-    }
+        }
 }
 `;
 export class Launches extends Component {
